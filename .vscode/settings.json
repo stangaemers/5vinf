@@ -1,0 +1,7 @@
+{
+    "html.autoClosingTags": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.linkedEditing": false,
+    "editor.snippetSuggestions": "none"
+}

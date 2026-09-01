@@ -1,0 +1,33 @@
+{
+  "name": "Frencken Webtemplate",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "forwardPorts": [8000, 8080],
+  "portsAttributes": {
+    "8000": {
+      "label": "Website",
+      "onAutoForward": "openPreview"
+    },
+    "8080": {
+      "label": "phpMyAdmin",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "git config --global --add safe.directory '*'",
+  "customizations": {
+    "vscode": {
+      "extensions": [],
+      "settings": {
+        "github.copilot.enable": {
+          "*": false
+        },
+        "github.copilot.chat.enabled": false,
+        "github.copilot.editor.enableAutoCompletions": false,
+        "git.useEditorAsCommitInput": false,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000
+      }
+    }
+  }
+}

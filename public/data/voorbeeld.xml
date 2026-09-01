@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lesmateriaal>
+    <school>Mgr. Frencken College</school>
+    <vak>Informatica</vak>
+    <onderwerpen>
+        <onderwerp>HTML</onderwerp>
+        <onderwerp>CSS</onderwerp>
+        <onderwerp>PHP</onderwerp>
+        <onderwerp>SQL</onderwerp>
+        <onderwerp>JSON</onderwerp>
+        <onderwerp>XML</onderwerp>
+    </onderwerpen>
+</lesmateriaal>
