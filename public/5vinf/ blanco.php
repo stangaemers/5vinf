@@ -8,8 +8,8 @@
     </head>
     <body>
 <?php
-
-    // hier komt alle PHP-code
+echo "hello world"
+    
 
 ?>
     </body>
