@@ -9,9 +9,8 @@
     <body>
 <?php
 
-    $x =13;
 
 ?>
-<p> <?= $x ?> </p>
+
     </body>
 </html>
