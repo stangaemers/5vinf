@@ -9,6 +9,11 @@
         
 <?php
 
+
+$dagen = array ( "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"
+);
+ 
 ?>
+<p> <?= $dagen [3] ?> </P>
  </body>
 </html>
