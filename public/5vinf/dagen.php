@@ -13,7 +13,25 @@
 $dagen = array ( "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"
 );
  
+
+
+
 ?>
-<p> <?= $dagen [3] ?> </P>
+
+<p> <?= $dagen [5] ?> </P>
+
+<ul>
+    <?php
+        for ( $i = 0; $i < 7; $i++){
+    ?>
+<li> <?= $dagen [$i] ?></li>
+
+
+<?php
+        }
+?>
+</ul>
+
+
  </body>
 </html>
