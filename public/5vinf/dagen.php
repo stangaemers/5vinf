@@ -10,7 +10,7 @@
 <?php
 
 
-$dagen = array ( "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"
+$dagen = array ( "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag" 
 );
  
 
@@ -22,7 +22,7 @@ $dagen = array ( "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zate
 
 <ul>
     <?php
-        for ( $i = 0; $i < 7; $i++){
+        for ( $i = 0; $i < count($dagen); $i++){
     ?>
 <li> <?= $dagen [$i] ?></li>
 
