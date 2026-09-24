@@ -29,12 +29,30 @@
         $totaal += $cijfer;
     }
     
-    // het gemiddelde volgt uit de som gedeeld door het aantal.
+
     $gemiddelde = $totaal / $aantal;
-    laagste = $cijfers[0];
-    hoogste = $cijfers[0];
- foreach ($cijfers as )
+   $laagste = $cijfers[0];
+   $hoogste = $cijfers[0];
+    $onvoldoendes = 0;
+    for ($i = 0 ; $i < $aantal ; $i++ ){ 
+         if ($cijfers[$i] < $laagste){
+            $laagste = $cijfers[$i] ;}
+        if ($cijfers[$i] > $hoogste){
+            $hoogste = $cijfers[$i] ;
+        }
+        if ( $cijfers[$i] <= 5.4){
+        $onvoldoendes++;
+        }
+    }
+
+   
+
 ?>
-        <p>Het gemiddelde cijfer is <?= $gemiddelde ?></p>
+    <p> het gemmidelde is <?= $gemiddelde?></p>
+    <p> het hoogste cijfer is<?= $hoogste?></p>
+    <p> het laagste cijfer is<?= $laagste?></p>
+    <p> het aantal onvoldoendes is<?= $onvoldoendes?></p>
+    <p> het precentage onvoldoendes is <?= 100 * $onvoldoendes / $aantal ?></p>
+
     </body>
 </html>
