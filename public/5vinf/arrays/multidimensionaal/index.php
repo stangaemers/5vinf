@@ -12,11 +12,22 @@
 
     include("top40.php");
 
-    for ($i = 0; $i < count($top40); $i++ )
+    for ($i = 0; $i < count($top40); $i++ ) {
+
+    $nummer = $top40[$i];
 ?>
 <table>
-<td><?= $top40[$i] ?></td>
+<<?= $nummer["notering"] ?>
+<td><?= $nummer["vorige"] ?>
+<p><?= $nummer["weken"] ?></p>
+<p><?= $nummer["titel"] ?></p>
+<p><?= $nummer["artiest"] ?></p>
+<p><?= $nummer["afbeelding"] ?></p>
 </table>
+<?php
 
+    }
+
+?>
     </body>
 </html> 
