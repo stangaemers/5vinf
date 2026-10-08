@@ -1,7 +1,23 @@
+   .titel {
+    color: blue;
+    font-size: 32px;
+    font-weight: bold;
+}
+.artiest {
+    color: red;
+    font-style: italic;
+}
+ 
  table {
-                border-collapse: collapse
+                border-collapse: collapse;
+            
             }
 
-            td, th {
-                border: 1px solid #ff0000;
+    td, th {
+                border: 3px solid #050505;
+
             }
+
+    
+         
+        
