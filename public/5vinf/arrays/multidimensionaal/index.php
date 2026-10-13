@@ -16,24 +16,36 @@
     for ($i = 0; $i < count($top40); $i++ ) {
 
     $nummer = $top40[$i];
-  //  if ( $nummer["vorige"] = "-") {
-   // $verandering = "nieuw";
-//}
+      $huidige_positie = $nummer["notering"];
+    $vorige_positie =   $nummer["vorige"]; 
+
+
+    if ($vorige_positie == "-") {
+        $verandering = "nieuw";
+    } elseif ($huidige_positie < $vorige_positie) {
+        $verandering = "gestegen";
+    } elseif ($huidige_positie > $vorige_positie) {
+        $verandering = "gezakt";
+    } else {
+        $verandering = "gelijk";    
+    }
+
+
 ?>
 
-    <tr>
-        <td rowspan="4"><?= $nummer["notering"] ?></td>
-        <td rowspan="4"><img src="<?= $nummer["afbeelding"] ?>" alt="<?= $nummer["titel"] ?>"></td>
-        <td class="titel"><?= $nummer["titel"] ?></td>
+    <tr class= "<?= $verandering ?>">
+        <td  rowspan="4 class = nummer<?= $verandering ?>"><h1><?= $nummer["notering"] ?></h1></td>
+        <td rowspan="4 <?= $verandering ?>"><img src="<?= $nummer["afbeelding"] ?>" alt="<?= $nummer["titel"] ?>"></td>
+        <td class="titel <?= $verandering ?>"><?= $nummer["titel"] ?></td>
     </tr>
     <tr>
-        <td class="artiest"><?= $nummer["artiest"] ?></td>
+        <td class="artiest <?= $verandering ?>"><?= $nummer["artiest"] ?></td>
     </tr>
     <tr>
-        <td>Vorige: <?= $nummer["vorige"] ?></td>
+        <td class="vorige <?= $verandering ?>">Vorige: <?= $nummer["vorige"] ?></td>
     </tr>
     <tr>
-        <td>Weken: <?= $nummer["weken"] ?></td>
+        <td class="weken <?= $verandering ?>">Weken: <?= $nummer["weken"] ?></td>
     </tr>
 
 <?php } ?>
