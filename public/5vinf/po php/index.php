@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="streamingplatform.css" />
     </head>
     <body>
+         <b class = top10> top 10 films </b>
 <?php
     include("films.php");
 ?>
@@ -24,12 +25,15 @@
             $imdb = "geen";
         }
         if ($rotten_tomatoes == "-") {
-            $rotten_tomatoes = "<b>geen</b>";
+            $rotten_tomatoes = "<b>niet van toepassing</b>";
         }
         if ($metacritic == "-") {
-            $metacritic = "<b>geen</b>";
+            $metacritic = "<b>niet van toepassing</b>";
         }
 ?>
+
+        
+
             <div class="film-container">
                 <table>
                     <tr>
@@ -38,7 +42,7 @@
                         </td>
                         <td>
                             <h1><?= $film["titel"] ?></h1>
-                            <span class="film-label">Notering:</span> <?= $film["notering"] ?><br />
+                            <span class="film-label">Notering:</span>  <?= $film["notering"] ?><br />
                             <span class="film-label">Jaar:</span> <?= $film["jaar"] ?><br />
                             <span class="film-label">Duur:</span> <?= $film["duur"] ?> minuten<br />
                             <span class="film-label">Genre:</span> <?= $film["genre"] ?><br />
