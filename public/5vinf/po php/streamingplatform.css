@@ -52,9 +52,12 @@ h1 {
 }
 
 .top10{
-    color: blue;
+    color: rgb(204, 42, 42);
     text-align: center;
-    font-size: 40pt;
-    font-style: italic;
+    font-size: 100pt;
+    font-family: 0pt;
+    font-family: "Copperplate Gothic", Copperplate, serif;
+    font-weight: bold;
+    margin: 0;
     
 }

@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="streamingplatform.css" />
     </head>
     <body>
-         <b class = top10> top 10 films </b>
+         <p class = top10> top 10 films </p>
 <?php
     include("films.php");
 ?>
