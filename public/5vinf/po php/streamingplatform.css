@@ -6,23 +6,21 @@
 }
 
 body {
-    background-color: #0c0b0b;
+    background-color: #000000;
     color: rgb(204, 42, 42);
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 main {
     width: 90%;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .film-container {
     background-color: #e9e3e3;
     border-radius: 25px;
     padding: 25px;
-    gap: 5px;
     margin-bottom: 50px;
 }
 
