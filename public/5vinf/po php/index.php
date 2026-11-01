@@ -22,7 +22,7 @@
         $metacritic = $film["ratings"]["metacritic"];
 
         if ($imdb == "-") {
-            $imdb = "geen";
+            $imdb = "niet van toepassing";
         }
         if ($rotten_tomatoes == "-") {
             $rotten_tomatoes = "<b>niet van toepassing</b>";
